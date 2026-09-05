@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --bg-main: #09090b;
+    --bg-card: #18181b;
+    --border-color: #27272a;
+    --text-title: #f4f4f5;
+    --text-body: #a1a1aa;
+    --text-subtle: #71717a;
+    --accent: #e4e4e7;
+  }
+
+  .theme-slate {
+    --bg-main: #0f172a;
+    --bg-card: #1e293b;
+    --border-color: #334155;
+    --text-title: #f8fafc;
+    --text-body: #94a3b8;
+    --text-subtle: #64748b;
+    --accent: #cbd5e1;
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-title);
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    overscroll-behavior-y: none;
+  }
+}
+
+/* iPhone 13 Safe Area Inset Support */
+.pt-safe {
+  padding-top: env(safe-area-inset-top, 44px);
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 34px);
+}
+
+.mb-safe {
+  margin-bottom: env(safe-area-inset-bottom, 34px);
+}
+
+/* Razor-Thin Border Utilities */
+.border-precision {
+  border: 1px solid var(--border-color);
+}
+
+.border-b-precision {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.border-t-precision {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Minimal Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Hide scrollbars for horizontal tab bars */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
