@@ -10,12 +10,68 @@
     {
       "src": "/apple-touch-icon.png",
       "sizes": "192x192",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
     },
     {
       "src": "/apple-touch-icon.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Urge Intercept",
+      "short_name": "Intercept",
+      "description": "Trigger delay protocol and breathing timer",
+      "url": "/?action=intercept",
+      "icons": [
+        {
+          "src": "/apple-touch-icon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Quick Capture",
+      "short_name": "Capture",
+      "description": "Log an immediate thought or todo",
+      "url": "/?action=capture",
+      "icons": [
+        {
+          "src": "/apple-touch-icon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Pinned Vault",
+      "short_name": "Vault",
+      "description": "Open emergency documents and routines",
+      "url": "/?tab=vault",
+      "icons": [
+        {
+          "src": "/apple-touch-icon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
+    },
+    {
+      "name": "Habits Matrix",
+      "short_name": "Habits",
+      "description": "View daily binary checklist",
+      "url": "/?tab=habits",
+      "icons": [
+        {
+          "src": "/apple-touch-icon.png",
+          "sizes": "192x192",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
